@@ -1,0 +1,23 @@
+body{
+    background-color: #dfd9d9;
+}
+.align{
+    text-align: center;
+    text-shadow: 3px 2px gray;
+}
+.decoration{
+    text-indent: 50px;
+    text-decoration: none;
+    text-align: justify;
+    text-transform: capitalize;
+    word-spacing: 1px;
+}
+p.summ{
+    color: indigo;
+    text-align: center;
+    border: 2px solid blue;
+}
+div.second {
+    background: rgba(0, 128, 0, 0.3);
+    text-align: center;
+  }

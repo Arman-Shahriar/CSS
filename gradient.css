@@ -1,0 +1,10 @@
+.gradient{
+    height: 400px;
+    width: 100%;
+    background: linear-gradient(to left, pink, yellow, skyblue, gray);
+}
+.gradient1{
+    height: 800px;
+    width: 100%;
+    background: radial-gradient(red, green, blue, violet);
+}

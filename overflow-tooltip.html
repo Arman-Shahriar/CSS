@@ -6,10 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Overflow & Tooltip</title>
     <style>
-        
+        div{
+            height: 300px;
+            width: 50%;
+            padding: 5px;
+            box-sizing: border-box;
+            background-color: aqua;
+            border: black solid 5px;
+            overflow: auto;
+        }
+        .tooltip-text{
+            
+            visibility: hidden;
+            width: 200px;
+            text-align: center;
+            padding: 5px;
+            background-color: rgb(23, 0, 128);
+            border-radius: 20px;
+            color: cyan;
+            position: absolute;
+            top: 345px;
+            z-index: 1;
+        }
+        .tooltip:hover .tooltip-text{
+            visibility: visible;
+        }
     </style>
 </head>
 <body>
-    
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nisi aliquid ipsa repellat recusandae harum sunt quod! Autem repellendus tempore, magnam suscipit, beatae, molestiae adipisci obcaecati itaque delectus ratione veniam repellat quaerat rerum sunt dolorem ullam nobis sint ipsam cumque in quisquam cupiditate maxime esse. Laudantium, incidunt sapiente amet provident illum quibusdam. Harum pariatur quo provident dolore nisi cum porro itaque explicabo atque accusamus quod perferendis dolorem quidem, rem laudantium, hic culpa quaerat eligendi voluptatum. Incidunt asperiores repellat dicta voluptatibus deleniti! Reprehenderit ipsa impedit fuga nihil recusandae, iste quibusdam tempore, magnam, rem perspiciatis quis. Expedita sunt ipsum incidunt debitis voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tempore, voluptatum assumenda sed error, praesentium accusamus ad architecto temporibus quam fugiat ea, a veritatis magni cumque sunt nihil maxime perspiciatis! Rem libero aut, consequatur voluptate aliquam ut ipsum cumque id iusto repudiandae perspiciatis. Inventore, voluptatem doloribus quibusdam est a minima accusamus, quis earum voluptatibus dolorem sunt illo sapiente vero pariatur cumque debitis nobis voluptate provident ad! Fuga molestias ab nulla hic, est similique enim dolore eius dignissimos expedita perferendis quaerat tenetur debitis vero molestiae obcaecati a accusantium culpa blanditiis aspernatur inventore! Ducimus harum sunt iure deserunt commodi reiciendis! Sunt, architecto.</div>
+
+    <br>
+
+    <a href="#" class="tooltip">
+        Facebook
+        <span class="tooltip-text">Facebook is a social media.</span>
+    </a>
 </body>
 </html>

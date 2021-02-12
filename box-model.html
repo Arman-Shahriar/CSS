@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Box Model</title>
-    <link rel="stylesheet" href="box-model.css">
-</head>
-<body>
-    <div class="container">
-        This is a div.
-    </div>
+    <style>
+      body {
+        background-color: rgb(143, 129, 129);
+      }
+      .container {
+        background-color: green;
+        width: 200px;
+        padding: 10px;
+        border: black 10px solid;
+        border-radius: 30px;
+        margin: 10px;
+        font-size: large;
+      }
+      p {
+        margin-left: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">This is a div.</div>
     <p>This is another paragraph.</p>
-</body>
+  </body>
 </html>

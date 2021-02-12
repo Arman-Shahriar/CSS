@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gradient</title>
-    <link rel="stylesheet" href="gradient.css">
-</head>
-<body>
-
-    <div class="gradient">
-
-    </div>
-    <hr>
-    <div class="gradient1">
-
-    </div>
-    
-</body>
+    <style>
+      .gradient {
+        height: 400px;
+        width: 100%;
+        background: linear-gradient(to left, pink, yellow, skyblue, gray);
+      }
+      .gradient1 {
+        height: 800px;
+        width: 100%;
+        background: radial-gradient(red, green, blue, violet);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gradient"></div>
+    <hr />
+    <div class="gradient1"></div>
+  </body>
 </html>

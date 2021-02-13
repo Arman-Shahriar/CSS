@@ -6,10 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table</title>
     <style>
-        
+        table{
+            border: black solid 2px;
+            border-collapse: collapse;
+            width: 100%;
+            height: auto;
+        }
+        th, td{
+            border: black solid 2px;
+            padding: 5px;
+            text-align: center;
+            vertical-align: middle;
+            
+        }
+        th{
+            background-color: darkcyan;
+            color: midnightblue;
+            height: 30px;
+        }
+        tr:hover{
+            background-color: black;
+        }
+        tr:nth-child(even){
+            background-color: powderblue;
+        }
+        tr:nth-child(odd){
+            background-color: indianred;
+        }
     </style>
 </head>
 <body>
-    
+    <table>
+        <caption>Student Information</caption>
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>GPA</th>
+            <th>BIO</th>
+            <th>E-MAIL</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Rishad</td>
+            <td>4.45</td>
+            <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, repudiandae!</td>
+            <td>xyz@gmail.com</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Shawon</td>
+            <td>3.86</td>
+            <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, repudiandae!</td>
+            <td>abc@gmail.com</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Pax</td>
+            <td>4.00</td>
+            <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, repudiandae!</td>
+            <td>nmo@gmail.com</td>
+        </tr>
+        <tr>
+            <td>104</td>
+            <td>Shahadat</td>
+            <td>4.03</td>
+            <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, repudiandae!</td>
+            <td>pqr@gmail.com</td>
+        </tr>
+    </table>
 </body>
 </html>

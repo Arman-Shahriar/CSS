@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Two</title>
+    <style>
+        textarea{
+            resize: none;
+            width: 50%;
+            padding: 15px;
+            border: rebeccapurple solid 3px;
+            border-radius: 5px;
+        }
+        input{
+            width: 100px;
+            border: solid 2px blueviolet;
+            border-radius: 3px;
+            background-color: skyblue;
+            color: purple;
+            padding: 5px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 700;
+        }
+        select{
+            width: 200px;
+            border: blueviolet solid 3px;
+            border-radius: 3px;
+            font-weight: 700;
+            padding: 5px 10px;
+            background-color: goldenrod;
+
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <textarea name="feedback" id="" cols="30" rows="10">Give us your feedback.</textarea><br>
+
+        <label for="submit"></label>
+        <input type="button" id="submit" value="Submit">
+
+        <label for="reset"></label>
+        <input type="reset" id="reset" value="Reset"><hr>
+
+        <select name="subjects" id="subjects">
+            <option value="c">C</option>
+            <option value="c++">C++</option>
+            <option value="java">JAVA</option>
+            <option value="python">PYTHON</option>
+        </select>
+
+        
+    </form>
+</body>
+</html>

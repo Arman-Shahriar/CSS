@@ -1,15 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pseudo</title>
     <style>
-        
+      a.bing:hover {
+        color: indigo;
+        font-weight: 700;
+      }
+      input {
+        padding: 15px;
+        font-size: 1rem;
+        width: 200px;
+        border-radius: 10px;
+        border: 5px soid black;
+        text-align: center;
+        font-weight: 700;
+      }
+      input:focus {
+        background-color: aqua;
+      }
+      table,
+      tr,
+      td,
+      th {
+        border: 2px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        height: auto;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      table {
+        width: 100%;
+      }
+      tr:nth-child(even) {
+        background-color: cadetblue;
+      }
+      tr:nth-child(odd) {
+        background-color: lightcoral;
+      }
+      p::first-letter {
+        color: mediumblue;
+        font-size: 3rem;
+        font-weight: 700;
+      }
+      p::first-line{
+          font-weight: 700;
+      }
+      p::after{
+          content: "<";
+      }
+      p::before{
+          content: none;
+      }
+      p:hover{
+          color: mediumspringgreen;
+      }
     </style>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <a class="bing" href="#">Bing</a><br />
+    <a href="#">Google</a><br /><br />
+
+    <label for="name"></label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Enter your name"
+    /><br /><br />
+
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>ID</th>
+        <th>GPA</th>
+        <th>E-MAIL</th>
+      </tr>
+      <tr>
+        <td>Arman</td>
+        <td>101</td>
+        <td>4.5</td>
+        <td>abc@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Pax</td>
+        <td>102</td>
+        <td>4.0</td>
+        <td>xyz@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Shawon</td>
+        <td>103</td>
+        <td>4.0</td>
+        <td>mno@gmail.com</td>
+      </tr>
+    </table>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis explicabo ipsum doloremque non! At amet quisquam asperiores maxime, eligendi quaerat cumque dolores impedit tempore quibusdam quasi modi enim accusamus nam.</p>
+  </body>
 </html>

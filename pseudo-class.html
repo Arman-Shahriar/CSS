@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+    <style>
+        .demo:hover{
+            background-color: black;
+            color: aqua;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        p:first-child{
+            background-color: brown;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        p:last-child{
+            background-color: darkblue;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        p:nth-child(2){
+            background-color: darkorchid;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        p:nth-child(2n+1){
+            background-color: darkred;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        li:nth-child(odd){
+            background-color: aqua;
+            width: 100px;
+            padding: 5px;
+            border-radius: 5px;
+            font-weight: 700;
+            color: darkblue;
+            margin-bottom: 2px;
+        }
+        li:nth-child(even){
+            background-color: darkorange;
+            width: 100px;
+            padding:5px;
+            border-radius: 5px;
+            font-weight: 700;
+            margin-bottom: 2px;
+        }
+        li:first-of-type{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        li:last-of-type{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo">
+        <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates maiores culpa illum explicabo blanditiis consequuntur iure iusto pariatur tempora repellat sint itaque nostrum, excepturi nam? Adipisci nobis accusamus vero molestiae!</P>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique suscipit quis quod numquam! Quibusdam incidunt rerum illum magnam, minima id facere sint provident, ab perferendis at beatae vitae! Nostrum, quibusdam!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum rem veritatis laboriosam voluptas, ab velit eum magni inventore incidunt vitae illum sed repudiandae ducimus. Eligendi voluptates totam nihil excepturi nam.lorem</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur corporis nobis pariatur commodi id? Sequi, perspiciatis. Quibusdam, nihil fugit, officia ut non consequuntur laboriosam necessitatibus ratione provident, obcaecati eos maiores.</p>
+    </div><br>
+
+    <ul>
+        <li>Page One</li>
+        <li>Page Two</li>
+        <li>Page Three</li>
+        <li>Page Four</li>
+    </ul>
+
+</body>
+</html>

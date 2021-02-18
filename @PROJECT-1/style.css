@@ -39,7 +39,7 @@ body {
     padding: 5px;
     font-weight: bold;
     margin-top: 5px;
-    background-color: rgb(109, 221, 221);
+    background-color: mediumaquamarine;
 }
 
 .title-link {
@@ -49,6 +49,7 @@ body {
     border-radius: 5px;
     height: auto;
     margin-top: 40px;
+    background-color: mistyrose;
 }
 
 .title-link p a {
@@ -86,6 +87,10 @@ hr {
 }
 
 /*Main Start*/
+.heading-style{
+    background-color: aqua;
+    padding: 3px;
+}
 
 #personal {
     margin-top: 20px;
@@ -117,12 +122,14 @@ hr {
 
 .right-div ul {
     list-style-position: inside;
-    list-style-image: url(image/tick.png);
-    padding: 5px 0px;
+    list-style-image: url(image/list.png);
+    padding: 5px 0px;     
 }
 
-.achiv-list{
+.achiv-list {
     font-weight: bold;
+    background-color: khaki;
+    padding: 3px;
 }
 
 .edu-left {
@@ -138,5 +145,25 @@ hr {
 /*Main End*/
 
 /*Footer Start*/
+.footer {
+    background-color: black;
+    text-align: center;
+    color: aqua;
+    font-weight: bold;
+    padding: 30px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: burlywood;
+    margin: 20px;
+    border: rgb(165, 100, 88) solid 2px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.footer p {
+    margin-top: 30px;
+}
 
 /*Footer End*/

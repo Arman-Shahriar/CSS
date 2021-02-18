@@ -1,20 +1,24 @@
+/*Page Start*/
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: rgb(5, 105, 105);
+    background-color: rgb(28, 75, 75);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .container {
     max-width: 1000px;
-    background-color: rgb(184, 193, 207);
+    background-color: rgb(255, 255, 255);
     margin: 0 auto;
     padding: 20px;
 }
 
+/*Page End*/
+
+/*Header Start*/
 #dp {
     width: 140px;
     height: 140px;
@@ -28,30 +32,21 @@ body {
     padding: 30px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    color: rgb(6, 6, 54);
-}
-
 #name-child {
     text-align: center;
-    border: rgb(0, 102, 255) solid 2px;
-    border-radius: 40px;
+    border: rgb(53, 66, 87) solid 2px;
+    border-radius: 10px;
     padding: 5px;
     font-weight: bold;
     margin-top: 5px;
+    background-color: rgb(109, 221, 221);
 }
 
 .title-link {
     float: right;
     padding: 10px;
-    border: 3px solid black;
-    border-radius: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
     height: auto;
     margin-top: 40px;
 }
@@ -67,16 +62,81 @@ p {
     color: rgb(23, 23, 172);
 }
 
-.div-clear {
-    clear: both;
-}
-
 hr {
     border: solid black 3px;
     width: 100%;
     color: black;
     background-color: black;
 }
-#personal{
+
+/*Header End*/
+
+/*Div Clear*/
+.div-clear {
+    clear: both;
+}
+
+/*Common Horizontal*/
+.common-hr {
+    border: solid black 2px;
+    border-bottom: none;
+    width: 100%;
+    margin: 20px auto;
 
 }
+
+/*Main Start*/
+
+#personal {
+    margin-top: 20px;
+}
+
+.content {
+    padding: 0 10px;
+}
+
+.left-div {
+    width: 25%;
+    float: left;
+
+}
+
+.right-div {
+    width: 70%;
+    float: left;
+    padding: 0 10px;
+    border-left: black 2px solid;
+
+}
+
+.right-div p {
+
+    margin: 10px 0px;
+    text-align: justify;
+}
+
+.right-div ul {
+    list-style-position: inside;
+    list-style-image: url(image/tick.png);
+    padding: 5px 0px;
+}
+
+.achiv-list{
+    font-weight: bold;
+}
+
+.edu-left {
+    float: left;
+    width: 45%;
+}
+
+.edu-right {
+    float: right;
+    width: 45%;
+}
+
+/*Main End*/
+
+/*Footer Start*/
+
+/*Footer End*/

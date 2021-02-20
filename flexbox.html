@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Model</title>
+    <style>
+        .flex-box{
+            background-color: indianred;
+            display: flex;
+            flex-flow: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            
+
+            /*flex-wrap: wrap;
+            flex-direction: row;*/
+        }
+        .flex-box > div{
+            /*width: 100px;*/
+            background-color: mediumseagreen;
+            margin: 10px;
+            padding: 20px;
+            font-size: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .div3{
+            order: 1;
+            flex-basis: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-box">
+        <div class="div1">
+            DIV 1
+        </div>
+        <div class="div2">
+            DIV 2
+        </div>
+        <div class="div3">
+            DIV 3
+        </div>
+        <div class="div4">
+            DIV 4
+        </div>
+        <div class="div5">
+            DIV 5
+        </div>
+        <div class="div6">
+            DIV 6
+        </div>
+        <div class="div7">
+            DIV 7
+        </div>
+        <div class="div8">
+            DIV 8
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Design</title>
+    <style>
+        .containers{
+            box-sizing: border-box;
+            display: flex;
+            flex-flow: wrap row;
+            background-color: mediumaquamarine;
+            padding: 20px;
+            align-items: center;
+            justify-content: center;
+        }   
+        .card{
+            width: 300px;
+            box-shadow: 3px 3px 4px indigo;
+            background-color: black;
+            box-sizing: border-box;
+            margin: 10px
+        }
+        .img-style{
+            width: 100%;
+            height: 300PX;
+        }
+        .card-body{
+            padding: 15px;
+        } 
+        .card-title{
+            font-size: 2rem;
+            text-align: center;
+            color: blanchedalmond;
+        }
+        .card-description p{
+            color: blanchedalmond;
+        }
+        .card:hover{
+            box-shadow: maroon 7px 7px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="containers">
+        <div class="card">
+            <img class="img-style" src="image/html.png" alt="html card">
+            <div class="card-body">
+                <div class="card-title">
+                    HTML
+                </div>
+                <div class="card-description">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat dolorum laudantium quo, facere, quibusdam labore ex accusamus libero vitae tempore saepe veritatis velit. Consequatur esse blanditiis minus odit eos veritatis? Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>   
+        </div>
+        <div class="card">
+            <img class="img-style" src="image/css.jpg" alt="html card">
+            <div class="card-body">
+                <div class="card-title">
+                    CSS
+                </div>
+                <div class="card-description">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat dolorum laudantium quo, facere, quibusdam labore ex accusamus libero vitae tempore saepe veritatis velit. Consequatur esse blanditiis minus odit eos veritatis? Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>   
+        </div>
+        <div class="card">
+            <img class="img-style" src="image/java.png" alt="html card">
+            <div class="card-body">
+                <div class="card-title">
+                    JS
+                </div>
+                <div class="card-description">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat dolorum laudantium quo, facere, quibusdam labore ex accusamus libero vitae tempore saepe veritatis velit. Consequatur esse blanditiis minus odit eos veritatis? Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>   
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            /*
+            grid-template-rows: 120px ;
+            grid-column-gap: 10px;
+            grid-row-gap: 20px;
+            grid-gap: 20px 10px;
+            background-color: cornflowerblue;
+            justify-content: center;
+            */
+            align-content: center;
+            
+
+        }
+        .grid-container > div{
+            background-color: chocolate;
+            border: 2px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+        .item1{
+            /*
+            grid-column-start: 1;
+            grid-column-end: 3;
+            */
+            grid-column: 1 / span 3;
+            /*grid-row-start: 1;
+            grid-row-end: 4;
+            */
+            grid-row: 1 / 4;
+            
+        }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item1">Div 1</div>
+      <div>Div 2</div>
+      <div>Div 3</div>
+      <div>Div 4</div>
+      <div>Div 5</div>
+      <div>Div 6</div>
+      <div>Div 7</div>
+      <div>Div 8</div>
+      <div>Div 9</div>
+      <div>Div 10</div>
+      <div>Div 11</div>
+      <div>Div 12</div>
+      <div>Div 13</div>
+      <div>Div 14</div>
+      <div>Div 15</div>
+      <div>Div 16</div>
+    </div>
+  </body>
+</html>

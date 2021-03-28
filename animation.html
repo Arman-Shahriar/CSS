@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        img{
+            height: 300px;
+            max-width: 500px;
+            display: block;
+            margin: 0 auto;
+            margin-top: 100px;
+            border-radius: 10px;
+
+            position: relative;
+            animation-name: Bangladesh;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes Bangladesh{
+            0%{
+                top: 0;
+                left: 0;
+            }
+            50%{
+                top: 100px;
+                left: 0;
+            }
+            100%{
+                top: 0;
+                left: 0;
+            }
+        }
+        /* img:hover{
+            animation-name: Bangladesh;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes Bangladesh{
+            0%{
+                max-width: 500px;
+                border: solid black 3px;
+            }
+            0%{
+                max-width: 600px;
+                border: solid green 3px;
+            }
+            100%{
+                max-width: 700px;
+                border: dotted red 10px;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <img src="image/falg.jpg" alt="">
+    
+</body>
+</html>

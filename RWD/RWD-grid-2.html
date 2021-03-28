@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD-Grid View</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .header{
+            background-color: coral;
+            color: white;
+            padding: 1% 5%;
+            text-align: center;
+        }
+        .nav-menu{
+            padding: 1% 5%;
+            background-color: teal;
+        }
+        .nav-menu a{
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: white;
+            padding: 10px;
+            display: block;
+        }
+        .main{
+            padding: 1% 5%;
+            background-color: turquoise;
+        }
+        .aside{
+            padding: 1% 5%;
+            background-color: thistle;
+            text-align: center;
+        }
+        .footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1rem;
+        }
+
+        [class*="col-"]{
+                width: 100%;
+            }
+
+        [class*="col-"]{
+            float: left;
+            padding: 10px;
+
+        }
+        .row::after{
+            content: '';
+            clear: both;
+            display: table;
+        }
+
+        @media screen and (min-width: 760px){
+            /*For Desktop*/
+        .col-1{width: 8.33%;}
+        .col-2{width: 16.66%;}
+        .col-3{width: 25%;}
+        .col-4{width: 33.33%;}
+        .col-5{width: 41.66%;}
+        .col-6{width: 50%;}
+        .col-7{width: 58.33%;}
+        .col-8{width: 66.66%;}
+        .col-9{width: 75%;}
+        .col-10{width: 83.33%;}
+        .col-11{width: 91.66%;}
+        .col-12{width: 100%;}
+        }
+
+        @media screen and (min-width: 600px){
+            /*For Tab*/
+        .col-s1{width: 8.33%;}
+        .col-s2{width: 16.66%;}
+        .col-s3{width: 25%;}
+        .col-s4{width: 33.33%;}
+        .col-s5{width: 41.66%;}
+        .col-s6{width: 50%;}
+        .col-s7{width: 58.33%;}
+        .col-s8{width: 66.66%;}
+        .col-s9{width: 75%;}
+        .col-s10{width: 83.33%;}
+        .col-s11{width: 91.66%;}
+        .col-s12{width: 100%;}
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Know the world</h1>
+    </div>
+    <div class="row">
+        <div class="nav-menu col-2 col-s3">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Tutorial</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="main col-7 col-s9">
+            <h1>China</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit quo beatae, at temporibus aliquam et aperiam obcaecati eius blanditiis ratione, consectetur ea amet voluptatem corrupti inventore ab? Debitis officia, enim suscipit molestias veritatis tempore laboriosam vel ullam quam delectus quis eligendi modi reprehenderit vitae praesentium earum iste labore. Fugiat iure nulla saepe, soluta unde placeat nemo ullam quis, molestias eum iusto, perspiciatis itaque. Quasi modi ratione perferendis sit quisquam nesciunt necessitatibus ducimus deleniti ad, sint nobis laudantium sapiente neque cum eligendi aliquam enim ex officiis? Voluptatem molestias autem explicabo pariatur voluptates enim deserunt excepturi, quae libero voluptatum minus molestiae sed necessitatibus officiis architecto voluptas fuga ex aut dolorem veritatis suscipit alias quidem illo? Architecto, impedit? Quidem accusantium delectus atque nihil cumque obcaecati placeat vel, veniam a nemo eum ipsa pariatur perferendis neque explicabo dolor laboriosam quibusdam assumenda iste possimus blanditiis? Maxime culpa pariatur doloremque nemo porro facilis corrupti esse molestiae, error eveniet ut. Accusantium mollitia veniam incidunt error exercitationem et officia perspiciatis cum fuga quo reiciendis deserunt dolores aliquam, repellat explicabo rem, similique accusamus quia impedit numquam est? Laudantium facere non eveniet voluptate? Libero nemo accusantium recusandae voluptatibus dolores alias, odit rem perferendis aut illum sed ab maiores aliquam quo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, tempore. Tenetur facere tempora odio quibusdam optio quasi. Animi perspiciatis repellat est ex dolorum nisi illum eaque nam esse rem! Autem labore officiis, nisi consectetur tempora cumque perferendis ipsa ducimus qui, placeat nesciunt illo. Vero fuga nemo dignissimos mollitia rem eaque minima necessitatibus impedit debitis culpa, quod, at similique adipisci quidem sit recusandae quo tempore esse? Ratione voluptas eos possimus officia asperiores fugiat ex quisquam voluptate accusantium aliquam? Iure eligendi magnam cumque hic eos quos temporibus, saepe iusto delectus officiis iste quisquam labore deleniti, et laudantium ipsam, facilis numquam tenetur amet!</p>
+        </div>
+        <div class="aside col-3 col-s12">
+            <h2>Bangladesh</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ut eum pariatur cumque deleniti quod consequatur repudiandae quos expedita maiores dolore autem illum itaque sed velit, alias iusto. Placeat, itaque!</p>
+            <h2>England</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ut eum pariatur cumque deleniti quod consequatur repudiandae quos expedita maiores dolore autem illum itaque sed velit, alias iusto. Placeat, itaque!</p>
+            <h2>Japan</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ut eum pariatur cumque deleniti quod consequatur repudiandae quos expedita maiores dolore autem illum itaque sed velit, alias iusto. Placeat, itaque!</p>
+            <h2>Korea</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ut eum pariatur cumque deleniti quod consequatur repudiandae quos expedita maiores dolore autem illum itaque sed velit, alias iusto. Placeat, itaque!</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        Designed by &copy; Arman Shahriar
+    </div>
+</body>
+</html>
